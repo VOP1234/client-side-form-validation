@@ -17,6 +17,7 @@ function checkInputs() {
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
 
+
     if (usernameValue === '') {
         //show error
         //add error class
@@ -38,21 +39,20 @@ function checkInputs() {
     }
 
 
-    if(passwordValue === ''){
+    if (passwordValue === '') {
         setErrorFor(password, 'Password cannot be blank');
-    } else{
+    } else {
         setSucessFor(password);
     }
 
 
-    if(password2Value === ''){
+    if (password2Value === '') {
         setErrorFor(password2, 'Password two cannot be blank');
-    } else if(passwordValue !== password2Value) {
+    } else if (passwordValue !== password2Value) {
         setErrorFor(password2, 'Passwords does not match');
-    }else{
+    } else {
         setSucessFor(password2);
     }
-
 
 }
 
