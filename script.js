@@ -38,13 +38,11 @@ function checkInputs() {
         setSucessFor(email);
     }
 
-
     if (passwordValue === '') {
         setErrorFor(password, 'Password cannot be blank');
     } else {
         setSucessFor(password);
     }
-
 
     if (password2Value === '') {
         setErrorFor(password2, 'Password two cannot be blank');
